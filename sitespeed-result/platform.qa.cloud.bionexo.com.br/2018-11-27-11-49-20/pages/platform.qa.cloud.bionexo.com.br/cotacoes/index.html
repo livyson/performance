@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Summary for 3 runs https://platform.qa.cloud.bionexo.com.br/cotacoes#/open/1/opening_desc at 2018-11-27 11:49:51</title><meta name="description" content=" collected by sitespeed.io 7.7.2"><meta name="robots" content="noindex"><link rel="stylesheet" href="../../../css/index.min.css"><style type="text/css">
+</style><link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../img/ico/sitespeed.io-144.png"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../img/ico/sitespeed.io-114.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../img/ico/sitespeed.io-72.png"><link rel="apple-touch-icon-precomposed" href="../../../img/ico/sitespeed.io-57.png"><link rel="shortcut icon" href="../../../img/ico/sitespeed.io.ico"></head><body><div class="darkblue nav"><div class="navgrid"><div class="logo"><a href="https://www.sitespeed.io"><img class="navbar-brand" src="../../../img/sitespeed.io-logo.png" width="162" height="50" alt="sitespeed.io logo"></a></div><ul><li><a href="../../../index.html">Summary</a></li><li><a href="../../../detailed.html">Detailed Summary</a></li><li><a class="active" href="../../../pages.html">Pages</a></li><li><a href="../../../domains.html">Domains</a></li><li><a href="../../../toplist.html">Toplist</a></li><li><a href="../../../assets.html">Assets</a></li><li><a href="../../../errors.html">Errors</a></li></ul></div></div><div class="container"><h1>Page summary</h1><h5 class="url"><a href="https://platform.qa.cloud.bionexo.com.br/cotacoes#/open/1/opening_desc">https://platform.qa.cloud.bionexo.com.br/cotacoes#/open/1/opening_desc</a></h5><p class="small">Tested 2018-11-27 11:49:51 using Chrome  for
+
+3 runs with desktop profile and connectivity native.</p><p><div class="large">All runs:&nbsp;</div></p><h4>Errors</h4><div class="errors">{
+  &quot;browsertime&quot;: &quot;UrlLoadError&quot;
+}</div><div id="tabs"><a id="summary" href="#summary" onclick="return selectTab(this, true);">Summary</a><a id="metrics" href="#metrics" onclick="return selectTab(this, true);">Metrics</a></div><script type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+  let tabsRoot = document.querySelector('#tabs');
+
+  let currentTab = tabsRoot.querySelector(location.hash || 'a');
+  if (!currentTab) currentTab = tabsRoot.querySelector('a');
+
+  let sections = document.querySelectorAll('#tabSections section');
+  for (let i = 0; i < sections.length; i++) {
+    sections[i].style.display = 'none';
+  }
+  selectTab(currentTab, false);
+});
+
+function selectTab(newSelection, updateUrlFragment) {
+  let tabsRoot = document.querySelector('#tabs');
+  let sectionRoot = document.querySelector('#tabSections');
+
+  let previousSelection = tabsRoot.querySelector('[selected]');
+
+  if (previousSelection) {
+    previousSelection.removeAttribute('selected');
+    let section = sectionRoot.querySelector(
+      '#' + previousSelection.id + '-panel'
+    );
+    section.style.display = 'none';
+  }
+
+  newSelection.setAttribute('selected', '');
+  let section = sectionRoot.querySelector('#' + newSelection.id + '-panel');
+  section.style.display = 'block';
+
+  let charts = section.querySelectorAll('.ct-chart');
+  for (let i = 0; i < charts.length; i++) {
+    if (charts[i].__chartist__) {
+      charts[i].__chartist__.update();
+    }
+  }
+
+  if (updateUrlFragment && history.replaceState) {
+    history.replaceState(null, null, '#' + newSelection.id);
+  }
+
+  return false;
+}
+</script><div id="tabSections"><section id="summary-panel"><h2>Summary</h2><div class="row"><div class="one-half column"><table><tr><th>Metric</th><th>Value</th></tr></table></div><div class="one-half column"><a href="data/screenshots/1.png"><img class="screenshot" src="data/screenshots/1.png" width="100%" alt="Screenshot of run 1"></a></div></div><h2>Timings Summary</h2><div class="responsive"><table><thead><tr><th>metric</th><th class="number">min</th><th class="number">median</th><th class="number">mean</th><th class="number">max</th></tr></thead></table></div><div class="downloads"></div></section><section id="metrics-panel"><p>Missing data from Browsertime.</p></section></div><footer><hr><p><a href="https://www.sitespeed.io">sitespeed.io</a>  7.7.2  by <a href="https://www.sitespeed.io/aboutus/">the sitespeed.io team</a> and <a href="https://github.com/sitespeedio/sitespeed.io/blob/master/CONTRIBUTORS.md">contributors</a></p></footer></div><script src="../../../js/sortable.min.js"></script><script src="../../../js/chartist.min.js"></script><script src="../../../js/chartist-plugin-axistitle.min.js"></script><script src="../../../js/chartist-plugin-tooltip.min.js"></script></body></html>
